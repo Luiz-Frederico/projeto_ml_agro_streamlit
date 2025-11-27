@@ -27,57 +27,79 @@ O projeto apresenta um sistema de análise preditiva para agricultura utilizando
 
 ## 🛠️ Tecnologias
 
-- **Python 3.10+**
-- **Scikit-Learn** (Machine Learning)
-- **Pandas & NumPy** (Análise de dados)
-- **Streamlit** (Dashboard)
-- **Plotly** (Visualizações interativas)
-- **Seaborn (Gráficos e Visualizações)
-- **Statsmodels
-- **Matplotlib
+- **Python 3.10**
+- **Scikit-Learn** 
+- **Pandas** 
+- **NumPy**
+- **Streamlit** 
+- **Plotly** 
+- **Seaborn** 
+- **Statsmodels**
+- **Matplotlib**
 
+## 📝 Métricas de Avaliação
 
+- **R² Score**: Coeficiente de determinação
+- **MAE**: Mean Absolute Error
+- **RMSE**: Root Mean Squared Error
+- **MAPE**: Mean Absolute Percentage Error
 
+## 📁 Estrutura do Projeto
 
-## 📁 Estrutura de pastas
+```
+proj-streamlit/
+├── app.py
+├── dados_simulados.py
+├── dados_simulados.csv
+├── requirements.txt 
+└── pages/
+    ├── 1_Exploracao_de_dados.py
+    └── 2_Modelagem_preditiva.py
 
-Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
+```
 
-- <b>.github</b>: Nesta pasta ficarão os arquivos de configuração específicos do GitHub que ajudam a gerenciar e automatizar processos no repositório.
+## 🔧 Como executar o código (local)
 
-- <b>assets</b>: aqui estão os arquivos relacionados a elementos não-estruturados deste repositório, como imagens.
+### Opção 1: Local
 
-- <b>config</b>: Posicione aqui arquivos de configuração que são usados para definir parâmetros e ajustes do projeto.
+```bash
+# Clone o repositório ou baixe os arquivos
+git clone https://github.com/SEU_USUARIO/projeto_ml_agro_streamlit.git
+cd projeto_ml_agro_streamlit
 
-- <b>document</b>: aqui estão todos os documentos do projeto que as atividades poderão pedir. Na subpasta "other", adicione documentos complementares e menos importantes.
+# Instalar dependências
+pip install -r requirements.txt
 
-- <b>scripts</b>: Posicione aqui scripts auxiliares para tarefas específicas do seu projeto. Exemplo: deploy, migrações de banco de dados, backups.
+# Executar dashboard
+streamlit run App.py
+```
 
-- <b>src</b>: Todo o código fonte criado para o desenvolvimento do projeto ao longo das 7 fases.
+### Opção 2: Streamlit Cloud
 
-- <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
+Acesse: [Análise Agrícola - FarmTech Solutions🌾🤖](https://projeto-ml-agro-str.streamlit.app/)
 
-## 🔧 Como executar o código
+## 🤖 Modelo de Machine Learning
 
-*Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços, bibliotecas etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o seu código e executá-lo a partir de sua máquina ou seu repositório. Considere a explicação organizada em fase.*
+1. **Previsão de Umidade do Solo**
+   - Algoritmo: Regressão Linear
+   - Features:pH, NPK_N, NPK_P, NPK_K, LDR_MV
+   - Métricas: R² > 0.85, MAE < 5%
 
+## 📊 Análise de Dados
+- Visão Geral do Dados
+- Estatísticas descritivas
+- Matriz de correlação
+- Avaliação do Modelo Preditivo (Regressão Linear)
+- Relação Visual entre Sensores e Umidade do Solo
+- Análise Univariada e Outliers
+- Distribuição da Umidade do Solo
 
-## 🗃 Histórico de lançamentos
-
-* 0.5.0 - XX/XX/2024
-    * 
-* 0.4.0 - XX/XX/2024
-    * 
-* 0.3.0 - XX/XX/2024
-    * 
-* 0.2.0 - XX/XX/2024
-    * 
-* 0.1.0 - XX/XX/2024
-    *
-
-## 📋 Licença
-
-<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/agodoi/template">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">Fiap</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
+## 📈 Previsões
+- Avaliação de Desempenho
+- Previsões vs. Valores Reais (Conjunto de Teste)
+- Distribuição da Umidade do Solo
+- Simulador Interativo de Cenário Agrícola
+- Matriz de Correlação das Features
 
 ## 👨‍🎓 Aluno: Luiz Frederico N. Campelo
 <a href="https://github.com/Luiz-Frederico" target="_blank">
@@ -89,5 +111,10 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 - <a href="https://www.linkedin.com/company/inova-fusca">Nome do Tutor</a>
 ### Coordenador(a)
 - <a href="https://www.linkedin.com/company/inova-fusca">Nome do Coordenador</a>
+
+## 📋 Licença
+
+<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Projeto acadêmico - FIAP 2025 - está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
+
 
 
